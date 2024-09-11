@@ -37,7 +37,35 @@
     </style>
 </head>
 
-<body>
+<body class="w3-content" style="max-width:1600px;">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container" >    
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+  <h4>Enriching Customer Experiences using MuleSoft with Data Cloud</h4>
+<!--     <p>Workshop Topics</p> -->
+  </div>
+  <div class="w3-bar-block">
+    <a href="http://mule4datacloud-ws.github.io/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black w3-light-grey"><i class="fa fa-user fa-fw w3-margin-right"></i>About the Workshop</a>     
+    <a href="http://mule4datacloud-ws.github.io/website/tabs/intro.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Introduction</a>     
+    <a href="http://mule4datacloud-ws.github.io/website/tabs/use-case.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Use Case Overview</a> 
+    <a href="http://mule4datacloud-ws.github.io/website/tabs/techsetup.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Technical Setup</a>
+    <a href="http://mule4datacloud-ws.github.io/website/tabs/module-1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Module 1 - Data Ingestion</a>
+    <a href="http://mule4datacloud-ws.github.io/website/tabs/module-2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Module 2 - Data Transformation</a>
+    <a href="http://mule4datacloud-ws.github.io/website/tabs/module-3.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Module 3 - Data Activation</a>
+    <a href="http://mule4datacloud-ws.github.io/website/tabs/wrap-up.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Wrap-up</a>
+    <a href="http://mule4datacloud-ws.github.io/website/tabs/resources.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Resources</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px; border-left: 1px solid #000000;">
 <header>
     <h1>MuleSoft for Data Cloud Workshop</h1>
 </header>
@@ -50,22 +78,6 @@
     <p>Using the Watch & Learn format this workshop will deliver majority of the content through detailed product demo walk-through and a segment of the workshop will provide the participants with hands-on experience of the product capability.</p>
     <p>The target audience for this workshop is primarily Salesforce Data Cloud customers and prospects interested in understanding how MuleSoft can assist their Data Cloud journey.</p>
 </section>
-
-<div class="w3-container"> <div class="w3-bar w3-black">
-    <a href="http://mule4datacloud-ws.github.io/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black w3-light-grey"><i class="fa fa-user fa-fw w3-margin-right"></i>About the Workshop</a>     
-    <a href="https://mule4datacloud-ws.github.io/website/tabs/intro.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Introduction</a>     
-    <a href="https://mule4datacloud-ws.github.io/website/tabs/use-case.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Use Case Overview</a> 
-    <a href="https://mule4datacloud-ws.github.io/website/tabs/techsetup.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Technical Setup</a>
-    <a href="https://mule4datacloud-ws.github.io/website/tabs/module-1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Module 1 - Data Ingestion</a>
-    <a href="https://mule4datacloud-ws.github.io/website/tabs/module-2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Module 2 - Data Transformation</a>
-    <a href="https://mule4datacloud-ws.github.io/website/tabs/module-3.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Module 3 - Data Activation</a>
-    <a href="https://mule4datacloud-ws.github.io/website/tabs/wrap-up.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Wrap-up</a>
-    <a href="https://mule4datacloud-ws.github.io/website/tabs/resources.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Resources</a>
-  
-   </div>
-
-     
-   </div>
 </body>
 </html>
 
